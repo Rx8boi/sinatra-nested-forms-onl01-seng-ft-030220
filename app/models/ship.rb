@@ -7,7 +7,7 @@ attr_accessor :name, :type, :booty_attributes
   def initialize(args)
     @name = args[:name]
     @type = args[:type]
-    @booty = args[:booty_attributes]
+    @booty = args[:booty]
     @@ships << self
   end
 
