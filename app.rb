@@ -1,6 +1,5 @@
 require './environment'
-require './models/pirate.rb'
-require './models/ship.rb'
+
 
 
 module FormsLab
