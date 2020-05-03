@@ -14,10 +14,10 @@ module FormsLab
     end
 
     post '/pirates' do
-      @pirates = Pirates.new(params[:pirate][:name], params[:pirate][:height], params[:pirate][:weight])
+      @pirate = Pirates.new(params[:pirate][:name], params[:pirate][:height], params[:pirate][:weight])
 
       params[:pirate][:ship].each do |details|
-        Ship.new(details)
+        Ship.new(details[:name], details[:type], details[:booty_attributes])
       end
 
       @ships = Ship.all
