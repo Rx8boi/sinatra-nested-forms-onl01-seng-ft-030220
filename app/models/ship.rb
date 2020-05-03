@@ -16,7 +16,7 @@ attr_accessor :name, :type, :booty_attributes
   end
 
   def self.clear
-    @@ships.delete
+    @@ships.clear
   end
 
 end
